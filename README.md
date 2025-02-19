@@ -42,6 +42,10 @@ At the end of the process, you should have three files available in your local f
 
 PeARS needs to know that a new language has been added to your instance. To do this, you should:
 
-* copy the three files referenced above (*.vocab*, *.model* and *.cos*) to your PeARS install, inside a newly created *app/api/models/<language-code>* folder (see the *api/models/en* for an example);
-* modify your .env file in the root directory of your PeARS install and add the language code to the PEARS_LANGS variable (see [the docs](https://pears.readthedocs.io/en/latest/dotenv.html#language-settings) for more information on the .env file).
+* copy the three files referenced above (*.vocab*, *.model* and *.cos*) to your PeARS install, inside a newly created *app/api/models/\<language-code\>* folder (see the *app/api/models/en* for an example);
+* modify your .env file in the root directory of your PeARS install and add the language code to the PEARS_LANGS variable (see [the docs](https://pears.readthedocs.io/en/latest/dotenv.html#language-settings) for more information on the .env file). We recommend ordering your language codes in order of importance. So if your instance is supposed to index both Faroese and English, but you expect more Faroese content, the relevant line in your .env should read
+
+```
+PEARS_LANGS = fo,en
+```
 
