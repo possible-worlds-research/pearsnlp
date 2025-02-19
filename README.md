@@ -13,7 +13,7 @@ sudo apt install python3-pip
 sudo apt install python3-virtualenv
 ```
 
-Then, create a directory for PeARSNLP, make your virtual environment and install the package and necessary dependency (the code for [WikiNLP](https://github.com/possible-worlds-research/wikinlp)):
+Then, clone PeARSNLP, make your virtual environment and install the necessary dependency (the Wikipedia-processing package [WikiNLP](https://github.com/possible-worlds-research/wikinlp)):
 
 ```
 git clone https://github.com/possible-worlds-research/pearsnlp.git
