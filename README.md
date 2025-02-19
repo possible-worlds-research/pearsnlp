@@ -33,8 +33,8 @@ python3 modelbuilder.py fo
 
 At the end of the process, you should have three files available in your local folders:
 
-* a .vocab file in the spm/<language-code> folder;
-* a .model file in the spm/<language-code> folder;
-* a .ds file in the ds/<language-code> folder.
+* a .vocab file in the spm/\<language-code\> folder;
+* a .model file in the spm/\<language-code\> folder;
+* a .ds file in the ds/\<language-code\> folder.
 
 All you have to do is copy them to your PeARS install, inside a newly created api/models/<language-code> folder (see the *api/models/en* for an example).
