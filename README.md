@@ -33,8 +33,14 @@ python3 modelbuilder.py fo
 
 At the end of the process, you should have three files available in your local folders:
 
-* a .vocab file in the spm/<language-code> folder;
-* a .model file in the spm/<language-code> folder;
-* a .ds file in the ds/<language-code> folder.
+* a .vocab file in the spm/\<language-code\> folder;
+* a .model file in the spm/\<language-code\> folder;
+* a .ds file in the ds/\<language-code\> folder.
 
-All you have to do is copy them to your PeARS install, inside a newly created api/models/<language-code> folder (see the *api/models/en* for an example).
+
+## Telling your PeARS install about the new language
+
+PeARS needs to know that a new language has been added to your instance. To do this, you should:
+
+* copy the three files referenced above (*.vocab*, *.model* and *.ds*) to your PeARS install, inside a newly created *app/api/models/<language-code>* folder (see the *api/models/en* for an example);
+* modify your .env file in the root directory of your PeARS install and add the language code to the PEARS_LANGS variable (see [the docs](https://pears.readthedocs.io/en/latest/dotenv.html#language-settings) for more information on the .env file).
