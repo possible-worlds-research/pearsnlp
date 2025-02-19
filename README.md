@@ -46,6 +46,6 @@ PeARS needs to know that a new language has been added to your instance. To do t
 * modify your .env file in the root directory of your PeARS install and add the language code to the PEARS_LANGS variable (see [the docs](https://pears.readthedocs.io/en/latest/dotenv.html#language-settings) for more information on the .env file). We recommend ordering your language codes in order of importance. So if your instance is supposed to index both Faroese and English, but you expect more Faroese content, the relevant line in your .env should read
 
 ```
-PEARS_LANGS = fo,en
+PEARS_LANGS=fo,en
 ```
 
