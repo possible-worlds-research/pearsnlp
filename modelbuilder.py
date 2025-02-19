@@ -37,8 +37,8 @@ def output_nns(lang):
 
 if __name__ == "__main__":
     lang = sys.argv[1]
-    #train_spm(lang)
-    #train_ds(lang)
+    train_spm(lang)
+    train_ds(lang)
     output_nns(lang)
     rename(f'spm/{lang}/{lang}wiki.16k.{today}.model',f'spm/{lang}/{lang}wiki.16k.model')
     rename(f'spm/{lang}/{lang}wiki.16k.{today}.vocab',f'spm/{lang}/{lang}wiki.16k.vocab')
